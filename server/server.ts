@@ -3,8 +3,6 @@ import * as R from 'ramda'
 import * as L from 'ramda-lens'
 import { fromJS } from 'immutable'
 
-const PORT = process.env.PORT || 8090;
-
 const payload = R.lensProp('payload')
 const transformPayload = L.over(payload, fromJS)
 
@@ -18,8 +16,8 @@ const emitState = R.curry((io, store, _) =>
   io.emit('state', store.getState().toJS())
 )
 
-export const startServer = store => {
-  const io = Server().attach(PORT)
+export const startServer = (store, app) => {
+  const io = Server(app)
   store.subscribe(emitState(io, store))
   io.on('connect', onConnect(store))
 }
