@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 8090;
 app.listen(PORT)
 
 function handler (req, res) {
-    res.writeHead(200);
+    res.setHeader("Access-Control-Allow-Origin", "*")
   };
 
 
