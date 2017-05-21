@@ -1,0 +1,20 @@
+[
+    {
+        "busName": "HotPink",
+        "busId": 8017,
+        "routeId": "00700b2d-9150-4696-9430-a494473726ea",
+        "bikeRackMaxCount": 3,
+        "wheelChairMaxCount": 1,
+        "bikeRacksCount": 0,
+        "wheelChairCount": 0
+    },
+    {
+        "busName": "DeepPink",
+        "busId": 1659,
+        "routeId": "3e46a593-147a-4791-bd30-8763b7e6b65e",
+        "bikeRackMaxCount": 3,
+        "wheelChairMaxCount": 2,
+        "bikeRacksCount": 0,
+        "wheelChairCount": 0
+    }
+]
